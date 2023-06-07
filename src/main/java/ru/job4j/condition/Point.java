@@ -10,7 +10,7 @@ public class Point {
     }
 
     public static void main(String[] args) {
-        double rsl = distance(0, 0, 2, 0);
+        double rsl = distance(6, 4, 2, 2);
         System.out.println(rsl);
     }
 }
