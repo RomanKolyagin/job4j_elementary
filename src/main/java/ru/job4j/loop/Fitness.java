@@ -11,9 +11,4 @@ public class Fitness {
         }
         return month;
     }
-
-    public static void main(String[] args) {
-        calc(90, 100);
-        calc(50, 90);
-    }
 }
