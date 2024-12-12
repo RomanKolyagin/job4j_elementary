@@ -6,8 +6,16 @@ public class Machine {
 
     public static int[] change(int money, int price) {
         int[] coins = {10, 5, 2, 1};
-        int[] result = new int[100];
+        int[] rsl = new int[100];
         int size = 0;
-        return Arrays.copyOf(result, size);
+        int delta = money - price;
+
+        for (int coin : coins) {
+            while (delta >= coin) {
+                delta -= coin;
+                rsl[size] = coin;
+            }
+        }
+        return Arrays.copyOf(rsl, size);
     }
 }
